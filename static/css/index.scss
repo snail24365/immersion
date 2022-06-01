@@ -1,3 +1,36 @@
-div {
-  background-color: blue;
+.root-container {
+  border: 1px solid #111;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+header {
+  min-height: 100px;
+  .site-title {
+    font-size: 56px;
+    font-weight: 800;
+  }
+}
+
+main {
+  border: 1px dashed rgb(0, 0, 0);
+  flex: 1;
+  min-height: 90vh;
+  padding: 20px 50px;
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px 20px;
+
+    .item {
+      border: 1px solid orange;
+    }
+  }
+}
+
+footer {
+  border: 1px dashed #222;
+  min-height: 80px;
 }
